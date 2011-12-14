@@ -1,8 +1,15 @@
-set nocompatible                " choose no compatibility with legacy vi
+"" choose no compatibility with legacy vi
+set nocompatible
+
+"" Pathogen - Install plugins from bundle
+call pathogen#infect()
+
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
+
+colorscheme koehler
 
 "" Whitespace
 set nowrap                      " don't wrap lines
@@ -15,3 +22,5 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain aT least one capital letter
+
+autocmd syntax * SpaceHi

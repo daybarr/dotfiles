@@ -1,12 +1,23 @@
 Inspired by Marcus (https://github.com/mjw/dotvim)
-
 with tips from mislav (http://mislav.uniqpath.com/2011/12/vim-revisited/)
 
-First make sure you are using the right font. Incosolate.otf from
+Installation:
+
+    git clone git://github.com/daybarr/dotvim.git ~/.vim
+
+Create symlinks:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+About:
+
+Requires manual setup: Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
 
-Colour Scheme:
-https://github.com/altercation/vim-colors-solarized
-
-Pathogen from:
+Plugins all managed by Pathogen from:
 https://github.com/tpope/vim-pathogen
+
+Plugins:
+
+SpaceHi: Togglable syntax highlighting of tabs and trailing spaces.
+http://www.vim.org/scripts/script.php?script_id=443
