@@ -1,0 +1,12 @@
+Inspired by Marcus (https://github.com/mjw/dotvim)
+
+with tips from mislav (http://mislav.uniqpath.com/2011/12/vim-revisited/)
+
+First make sure you are using the right font. Incosolate.otf from
+http://www.levien.com/type/myfonts/inconsolata.html
+
+Colour Scheme:
+https://github.com/altercation/vim-colors-solarized
+
+Pathogen from:
+https://github.com/tpope/vim-pathogen
