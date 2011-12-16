@@ -9,11 +9,14 @@ Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
+Useful features:
+  F5 - run pep8 check against Python file
+
 Requires manual setup: Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
 
-System Dependecies:
-pylint
+System Dependencies, can be sudo pip install'ed
+pylint pep8
 
 Plugins all managed by Pathogen from:
 https://github.com/tpope/vim-pathogen
@@ -25,3 +28,6 @@ http://www.vim.org/scripts/script.php?script_id=443
 
 pylint: compiler plugin for python style checking tool 
 http://www.vim.org/scripts/script.php?script_id=891
+
+pep8: Check your python source files with PEP8 
+http://www.vim.org/scripts/script.php?script_id=2914
