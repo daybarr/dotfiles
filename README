@@ -31,3 +31,6 @@ http://www.vim.org/scripts/script.php?script_id=891
 
 pep8: Check your python source files with PEP8 
 http://www.vim.org/scripts/script.php?script_id=2914
+
+pyflakes: PyFlakes on-the-fly Python code checking
+http://www.vim.org/scripts/script.php?script_id=2441
