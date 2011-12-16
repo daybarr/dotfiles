@@ -9,10 +9,11 @@ Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
-About:
-
 Requires manual setup: Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
+
+System Dependecies:
+pylint
 
 Plugins all managed by Pathogen from:
 https://github.com/tpope/vim-pathogen
@@ -21,3 +22,6 @@ Plugins:
 
 SpaceHi: Togglable syntax highlighting of tabs and trailing spaces.
 http://www.vim.org/scripts/script.php?script_id=443
+
+pylint: compiler plugin for python style checking tool 
+http://www.vim.org/scripts/script.php?script_id=891
