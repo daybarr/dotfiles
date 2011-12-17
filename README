@@ -40,3 +40,6 @@ http://www.vim.org/scripts/script.php?script_id=1697
 
 repeat: enable repeating supported plugin maps with "."
 http://www.vim.org/scripts/script.php?script_id=2136
+
+python_fn: A set of menus/shortcuts to work with Python files
+http://www.vim.org/scripts/script.php?script_id=30
