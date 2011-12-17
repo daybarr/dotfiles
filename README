@@ -34,3 +34,9 @@ http://www.vim.org/scripts/script.php?script_id=2914
 
 pyflakes: PyFlakes on-the-fly Python code checking
 http://www.vim.org/scripts/script.php?script_id=2441
+
+surround: quoting/parenthesizing made simple
+http://www.vim.org/scripts/script.php?script_id=1697
+
+repeat: enable repeating supported plugin maps with "."
+http://www.vim.org/scripts/script.php?script_id=2136
