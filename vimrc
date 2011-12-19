@@ -13,7 +13,6 @@ colorscheme koehler
 set number
 
 "" Whitespace
-set nowrap                      " don't wrap lines
 set tabstop=4 shiftwidth=4      " a tab is 4 spaces
 set expandtab                   " use spaces, not tabs
 set backspace=indent,eol,start  " backspace through everything in insert mode
