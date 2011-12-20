@@ -1,49 +1,27 @@
-Inspired by Marcus (https://github.com/mjw/dotvim)
-with tips from mislav (http://mislav.uniqpath.com/2011/12/vim-revisited/)
+# Installation
 
-Installation:
+    git clone git://github.com/daybarr/dotfiles.git ~/dotfiles
+    ln -s ~/dotfiles/.{fonts,vimrc} ~/ 
 
-    git clone git://github.com/daybarr/dotvim.git ~/.vim
+Required for vim plugins:
 
-Create symlinks:
+    sudo pip install pylint pep8
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+# vim
+Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
-Useful features:
-  F5 - run pep8 check against Python file
+  * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces.
+  * [pylint](http://www.vim.org/scripts/script.php?script_id=891): compiler plugin for python style checking tool 
+  * [pep8](http://www.vim.org/scripts/script.php?script_id=2914): Check your python source files with PEP8 
+    * F5 - run pep8 check against Python file
+  * [pyflakes](http://www.vim.org/scripts/script.php?script_id=2441): PyFlakes on-the-fly Python code checking
+  * [surround](http://www.vim.org/scripts/script.php?script_id=1697): quoting/parenthesizing made simple
+  * [repeat](http://www.vim.org/scripts/script.php?script_id=2136): enable repeating supported plugin maps with "."
+  * [python_fn](http://www.vim.org/scripts/script.php?script_id=30): A set of menus/shortcuts to work with Python files
+  * [vim-pythontextobj](https://github.com/natw/vim-pythontextobj): specify text object targets for python classes and
+functions
 
-Requires manual setup: Incosolata.otf font from
+# fonts
+Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
 
-System Dependencies, can be sudo pip install'ed
-pylint pep8
-
-Plugins all managed by Pathogen from:
-https://github.com/tpope/vim-pathogen
-
-Plugins:
-
-SpaceHi: Togglable syntax highlighting of tabs and trailing spaces.
-http://www.vim.org/scripts/script.php?script_id=443
-
-pylint: compiler plugin for python style checking tool 
-http://www.vim.org/scripts/script.php?script_id=891
-
-pep8: Check your python source files with PEP8 
-http://www.vim.org/scripts/script.php?script_id=2914
-
-pyflakes: PyFlakes on-the-fly Python code checking
-http://www.vim.org/scripts/script.php?script_id=2441
-
-surround: quoting/parenthesizing made simple
-http://www.vim.org/scripts/script.php?script_id=1697
-
-repeat: enable repeating supported plugin maps with "."
-http://www.vim.org/scripts/script.php?script_id=2136
-
-python_fn: A set of menus/shortcuts to work with Python files
-http://www.vim.org/scripts/script.php?script_id=30
-
-vim-pythontextobj: specify text object targets for python classes and
-functions
-https://github.com/natw/vim-pythontextobj
