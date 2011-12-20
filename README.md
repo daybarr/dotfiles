@@ -1,13 +1,15 @@
+My dotfiles, mainly used for Ubuntu Linux
+
 # Installation
 
     git clone git://github.com/daybarr/dotfiles.git ~/dotfiles
-    ln -s ~/dotfiles/.{fonts,vimrc} ~/ 
+    ln -s ~/dotfiles/.{fonts,vim,*rc} ~/
 
 Required for vim plugins:
 
     sudo pip install pylint pep8
 
-# vim
+## vim
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
   * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces.
@@ -21,7 +23,7 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
   * [vim-pythontextobj](https://github.com/natw/vim-pythontextobj): specify text object targets for python classes and
 functions
 
-# fonts
+## fonts
 Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
 
