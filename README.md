@@ -7,13 +7,12 @@ My dotfiles, mainly used for Ubuntu Linux
 
 Required for vim plugins:
 
-    sudo pip install pylint pep8
+    sudo pip install pep8
 
 ## vim
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
   * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces.
-  * [pylint](http://www.vim.org/scripts/script.php?script_id=891): compiler plugin for python style checking tool 
   * [pep8](http://www.vim.org/scripts/script.php?script_id=2914): Check your python source files with PEP8 
     * F5 - run pep8 check against Python file
   * [pyflakes](http://www.vim.org/scripts/script.php?script_id=2441): PyFlakes on-the-fly Python code checking
