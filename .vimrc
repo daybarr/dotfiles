@@ -26,8 +26,3 @@ set smartcase       " ... unless they contain aT least one capital letter
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
-
-" pylint
-autocmd FileType python compiler pylint
-" don't auto open quickfix window
-let g:pylint_cwindow = 0
