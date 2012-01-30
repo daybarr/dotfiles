@@ -27,3 +27,5 @@ functions
 Incosolata.otf font from
 http://www.levien.com/type/myfonts/inconsolata.html
 
+Note this.ttf font from
+http://www.dafont.com/note-this.font
