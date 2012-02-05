@@ -3,7 +3,7 @@ My dotfiles, mainly used for Ubuntu Linux
 # Installation
 
     git clone git@github.com:daybarr/dotfiles.git ~/dotfiles
-    ln -s ~/dotfiles/.{fonts,vim,*rc} ~/
+    ~/dotfiles/setup.py
 
 Required for vim plugins:
 
