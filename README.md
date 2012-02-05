@@ -2,7 +2,7 @@ My dotfiles, mainly used for Ubuntu Linux
 
 # Installation
 
-    git clone git://github.com/daybarr/dotfiles.git ~/dotfiles
+    git clone git@github.com:daybarr/dotfiles.git ~/dotfiles
     ln -s ~/dotfiles/.{fonts,vim,*rc} ~/
 
 Required for vim plugins:
