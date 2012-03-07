@@ -23,6 +23,10 @@ set incsearch       " incremental searching
 set ignorecase      " searches are case insensitive...
 set smartcase       " ... unless they contain aT least one capital letter
 
+"" Alias anonymous register to * (X11 selection register)
+" http://vim.wikia.com/wiki/Accessing_the_system_clipboard
+set clipboard=unnamed
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
