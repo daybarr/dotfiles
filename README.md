@@ -2,7 +2,7 @@ My dotfiles, mainly used for Ubuntu Linux
 
 # Installation
 
-    git clone git@github.com:daybarr/dotfiles.git ~/dotfiles
+    git clone https://daybarr@github.com/daybarr/dotfiles.git ~/dotfiles
     ~/dotfiles/setup.py
 
 Required for vim plugins:
