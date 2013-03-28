@@ -23,9 +23,10 @@ set incsearch       " incremental searching
 set ignorecase      " searches are case insensitive...
 set smartcase       " ... unless they contain aT least one capital letter
 
-"" Alias anonymous register to * (X11 selection register)
+"" Alias anonymous register to + (X11 window clipboard)
 " http://vim.wikia.com/wiki/Accessing_the_system_clipboard
-set clipboard=unnamed
+" Requires vim 7.3.74 or higher. Use unnamed for the selection register (*)
+set clipboard=unnamedplus
 
 "" Plugin specific settings
 " SpaceHi
