@@ -1,4 +1,4 @@
-My dotfiles, mainly used for Ubuntu Linux
+My dotfiles for Ubuntu Linux
 
 # Installation
 
@@ -23,8 +23,5 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
   * [better_python](http://www.vim.org/scripts/script.php?script_id=974): handle continuation lines better than vim defaults
 
 ## fonts
-Incosolata.otf font from
-http://www.levien.com/type/myfonts/inconsolata.html
-
-Note this.ttf font from
-http://www.dafont.com/note-this.font
+  * [Incosolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
+  * [Note this.ttf](http://www.dafont.com/note-this.font)
