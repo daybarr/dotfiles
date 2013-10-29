@@ -31,3 +31,5 @@ set clipboard=unnamedplus
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
+" Open NERDTree when vim starts up if no files were specified
+autocmd vimenter * if !argc() | NERDTree | endif

@@ -21,6 +21,8 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
   * [python_fn](http://www.vim.org/scripts/script.php?script_id=30): A set of menus/shortcuts to work with Python files
   * [vim-pythontextobj](https://github.com/natw/vim-pythontextobj): specify text object targets for python classes and functions
   * [better_python](http://www.vim.org/scripts/script.php?script_id=974): handle continuation lines better than vim defaults
+  * [bufexplorer](http://www.vim.org/scripts/script.php?script_id=42): quickly and esily switch between buffers
+  * [The NERD tree](http://www.vim.org/scripts/script.php?script_id=1658): explore your filesystem to open files and directories.
 
 ## fonts
   * [Incosolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
