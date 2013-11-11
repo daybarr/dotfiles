@@ -25,5 +25,5 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
   * [The NERD tree](http://www.vim.org/scripts/script.php?script_id=1658): explore your filesystem to open files and directories.
 
 ## fonts
-  * [Incosolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
+  * [Inconsolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
   * [Note this.ttf](http://www.dafont.com/note-this.font)
