@@ -28,8 +28,13 @@ set smartcase       " ... unless they contain aT least one capital letter
 " Requires vim 7.3.74 or higher. Use unnamed for the selection register (*)
 set clipboard=unnamedplus
 
+" Enable working on hidden buffers without requiring save before switch
+" http://stackoverflow.com/a/103590/445073
+set hidden
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
 " Open NERDTree when vim starts up if no files were specified
 autocmd vimenter * if !argc() | NERDTree | endif
+noremap <script> <silent> <unique> <Leader>t :NERDTreeToggle<CR>
