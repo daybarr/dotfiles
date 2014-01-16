@@ -35,6 +35,6 @@ set hidden
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
-" Open NERDTree when vim starts up if no files were specified
-autocmd vimenter * if !argc() | NERDTree | endif
+
+" NERDTree
 noremap <script> <silent> <unique> <Leader>t :NERDTreeToggle<CR>
