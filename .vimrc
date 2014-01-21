@@ -32,6 +32,8 @@ set clipboard=unnamedplus
 " http://stackoverflow.com/a/103590/445073
 set hidden
 
+let mapleader=","           " leader is comma, not backslash which hurts
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
