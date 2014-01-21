@@ -34,6 +34,8 @@ set hidden
 
 let mapleader=","           " leader is comma, not backslash which hurts
 
+nmap gV `[v`]               " highlight last inserted text
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
