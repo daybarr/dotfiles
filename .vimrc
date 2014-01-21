@@ -36,6 +36,8 @@ let mapleader=","           " leader is comma, not backslash which hurts
 
 nmap gV `[v`]               " highlight last inserted text
 
+nnoremap <leader>u :GundoToggle<CR> " Toggle gundo (vim undo for humans)
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
