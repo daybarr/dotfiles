@@ -5,10 +5,10 @@ import os
 IGNORE = ['.gitignore', '.git']
 
 if __name__ == "__main__":
-    this_dir = os.path.dirname(__file__)
+    this_dir = os.path.abspath(os.path.dirname(__file__))
     home_dir = os.environ['HOME']
     for dotfile in (f for f in os.listdir(this_dir)
-        if f not in IGNORE and f.startswith('.')):
+                    if f not in IGNORE and f.startswith('.')):
         home_file = os.path.join(home_dir, dotfile)
         repo_file = os.path.join(this_dir, dotfile)
         if not os.path.exists(home_file):
