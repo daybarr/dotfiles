@@ -38,6 +38,8 @@ nmap gV `[v`]               " highlight last inserted text
 
 nnoremap <leader>u :GundoToggle<CR> " Toggle gundo (vim undo for humans)
 
+set wildmenu                " visual autocomplete bar for the command menu
+
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
