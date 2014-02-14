@@ -26,6 +26,7 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
   * [bufexplorer](http://www.vim.org/scripts/script.php?script_id=42): quickly and esily switch between buffers
   * [The NERD tree](http://www.vim.org/scripts/script.php?script_id=1658): explore your filesystem to open files and directories
   * [gundo](http://www.vim.org/scripts/script.php?script_id=1658): making vim's undo tree usable by humans
+  * [emmet.vim](http://www.vim.org/scripts/script.php?script_id=2981): for HTML and CSS hi-speed coding
 
 ## fonts
   * [Inconsolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
