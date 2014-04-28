@@ -31,3 +31,6 @@ Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 ## fonts
   * [Inconsolata.otf](http://www.levien.com/type/myfonts/inconsolata.html)
   * [Note this.ttf](http://www.dafont.com/note-this.font)
+
+## redshift
+  A configuration file and autostart for [redshift-gtk](http://jonls.dk/redshift/)
