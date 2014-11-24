@@ -103,3 +103,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:~/bin
+
+# Work around unsafe less extensions:
+# http://seclists.org/fulldisclosure/2014/Nov/74
+unset LESSOPEN
+unset LESSCLOSE
