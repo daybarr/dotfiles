@@ -51,3 +51,6 @@ autocmd syntax * SpaceHi
 
 " NERDTree
 noremap <script> <silent> <unique> <Leader>t :NERDTreeToggle<CR>
+
+" pep8
+let g:pep8_map='<leader>8'
