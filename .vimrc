@@ -26,7 +26,12 @@ set smartcase       " ... unless they contain aT least one capital letter
 "" Alias anonymous register to + (X11 window clipboard)
 " http://vim.wikia.com/wiki/Accessing_the_system_clipboard
 " Requires vim 7.3.74 or higher. Use unnamed for the selection register (*)
-set clipboard=unnamedplus
+" On windows just use * which is the windows clipboard
+if has("win32")
+  set clipboard=unnamed
+else
+  set clipboard=unnamedplus
+endif
 
 " Enable working on hidden buffers without requiring save before switch
 " http://stackoverflow.com/a/103590/445073
