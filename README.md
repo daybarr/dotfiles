@@ -15,8 +15,7 @@ Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
   * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces
-  * [pep8](http://www.vim.org/scripts/script.php?script_id=2914): Check your python source files with PEP8
-    * F5 - run pep8 check against Python file
+  * [python_pep8](http://www.vim.org/scripts/script.php?script_id=3160): Check your python source files with PEP8
   * [pyflakes](http://www.vim.org/scripts/script.php?script_id=2441): PyFlakes on-the-fly Python code checking
   * [surround](http://www.vim.org/scripts/script.php?script_id=1697): quoting/parenthesizing made simple
   * [repeat](http://www.vim.org/scripts/script.php?script_id=2136): enable repeating supported plugin maps with "."
