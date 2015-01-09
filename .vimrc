@@ -60,13 +60,13 @@ set hidden
 " Use comma as leader, not backslash which hurts
 let mapleader=","
 
-" highlight last inserted text
+" Command to visually highlight the last inserted text
 nmap <leader>v `[v`]
 
 " Toggle gundo (vim undo for humans)
 nnoremap <leader>u :GundoToggle<CR>
 
-" visual autocomplete bar for the command menu
+" Visual autocomplete bar for the command menu
 set wildmenu
 
 "" Status line
