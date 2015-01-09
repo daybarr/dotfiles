@@ -48,13 +48,17 @@ endif
 " http://stackoverflow.com/a/103590/445073
 set hidden
 
-let mapleader=","           " leader is comma, not backslash which hurts
+" Use comma as leader, not backslash which hurts
+let mapleader=","
 
-nmap gV `[v`]               " highlight last inserted text
+" highlight last inserted text
+nmap <leader>v `[v`]
 
-nnoremap <leader>u :GundoToggle<CR> " Toggle gundo (vim undo for humans)
+" Toggle gundo (vim undo for humans)
+nnoremap <leader>u :GundoToggle<CR>
 
-set wildmenu                " visual autocomplete bar for the command menu
+" visual autocomplete bar for the command menu
+set wildmenu
 
 "" Status line
 " Always show
