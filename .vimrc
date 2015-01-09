@@ -6,7 +6,6 @@ call pathogen#infect()
 
 syntax enable
 set encoding=utf-8
-set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Colors
@@ -69,7 +68,11 @@ nnoremap <leader>u :GundoToggle<CR>
 " Visual autocomplete bar for the command menu
 set wildmenu
 
-"" Status line
+" Show (partial) command in the last line of the screen.
+" Also shows size of selction in visual mode.
+set showcmd
+
+""" Status line
 " Always show
 set laststatus=2
 
