@@ -21,8 +21,6 @@ if has('gui_running')
     endif
 endif
 
-set number
-
 "" Whitespace
 set tabstop=4 shiftwidth=4      " a tab is 4 spaces
 set expandtab                   " use spaces, not tabs
@@ -43,6 +41,9 @@ if has("win32")
 else
     set clipboard=unnamedplus
 endif
+
+" Show line numbers
+set number
 
 " Enable working on hidden buffers without requiring save before switch
 " http://stackoverflow.com/a/103590/445073
