@@ -13,9 +13,17 @@ filetype plugin indent on       " load file type plugins + indentation
 set background=dark
 colorscheme solarized
 
-"" Font for gvim
+"" gvim options
 if has('gui_running')
-    set guioptions-=T  " no toolbar
+    " no toolbar
+    set guioptions-=T
+
+    " Disable scrollbars
+    " These cause gvim to become "unsnapped" when toggling NERDTree etc as the
+    " new scrollbar resizes the window. Let's avoid that.
+    set guioptions-=rL
+
+    " Font
     if has('gui_win32')
         set guifont=Consolas:h9:b:cANSI
     endif
