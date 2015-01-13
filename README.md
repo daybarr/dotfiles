@@ -11,14 +11,14 @@ Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
   * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking plugin
-
-    sudo apt-get install npm
-    sudo npm install -g jshint
-
+```
+sudo apt-get install npm
+sudo npm install -g jshint
+```
   * [python_pep8](http://www.vim.org/scripts/script.php?script_id=3160): Check your python source files with PEP8
-
-    sudo pip install pep8
-
+```
+sudo pip install pep8
+```
   * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces
   * [surround](http://www.vim.org/scripts/script.php?script_id=1697): quoting/parenthesizing made simple
   * [repeat](http://www.vim.org/scripts/script.php?script_id=2136): enable repeating supported plugin maps with "."
