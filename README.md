@@ -7,16 +7,17 @@ My dotfiles for Ubuntu Linux
 
 Required for vim plugins:
 
-    sudo pip install pep8
+    sudo pip install pep8 nodejs npm
+    npm install -g jshint
 
 ## vim
 Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good-vimrc.html)
 
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
+  * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking plugin
   * [SpaceHi](http://www.vim.org/scripts/script.php?script_id=443): Togglable syntax highlighting of tabs and trailing spaces
   * [python_pep8](http://www.vim.org/scripts/script.php?script_id=3160): Check your python source files with PEP8
-  * [pyflakes](http://www.vim.org/scripts/script.php?script_id=2441): PyFlakes on-the-fly Python code checking
   * [surround](http://www.vim.org/scripts/script.php?script_id=1697): quoting/parenthesizing made simple
   * [repeat](http://www.vim.org/scripts/script.php?script_id=2136): enable repeating supported plugin maps with "."
   * [python_fn](http://www.vim.org/scripts/script.php?script_id=30): A set of menus/shortcuts to work with Python files
