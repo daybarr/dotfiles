@@ -10,6 +10,10 @@ filetype plugin indent on       " load file type plugins + indentation
 
 "" Colors
 set background=dark
+if $COLORTERM == 'gnome-terminal' || $TERM == 'xterm-256color'
+    let g:solarized_termcolors=256
+    set t_Co=256
+endif
 colorscheme solarized
 
 "" gvim options

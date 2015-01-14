@@ -30,7 +30,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|gnome-terminal) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -108,3 +108,6 @@ export PATH=$PATH:~/bin
 # http://seclists.org/fulldisclosure/2014/Nov/74
 unset LESSOPEN
 unset LESSCLOSE
+
+# Enable 256 colors
+export TERM="xterm-256color"
