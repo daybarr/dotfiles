@@ -103,7 +103,8 @@ noremap <script> <silent> <unique> <Leader>f :NERDTreeFind<CR>
 " Filter out . and .. directory entries - for when we view hidden files
 " (shift+i) in NERDTree window.
 " Also filter out any .foo.swp for files being edited.
-let NERDTreeIgnore=['\.$', '\.\.$', '\..*\.swp$']
+" Binary .pyc and .pyo files for python.
+let NERDTreeIgnore=['\.$', '\.\.$', '\..*\.swp$', '.py[co]$']
 
 " python_pep8
 autocmd FileType python map <buffer> <Leader>8 :call Pep8()<CR>
