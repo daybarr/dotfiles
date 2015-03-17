@@ -11,6 +11,11 @@ Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
 * [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking plugin
+    * For Python support:
+```
+sudo apt-get install pyflakes
+```
+    * For JavaScript support:
 ```
 sudo apt-get install npm
 sudo npm install -g jshint
