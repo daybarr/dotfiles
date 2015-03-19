@@ -22,16 +22,16 @@ if !has('gui_running')
         " plus extra hackery
         if has('builtin_terms') && ((&term == "pcterm") || (&term == "win32"))
                 "echomsg "Trying to set ANSI 256-color terminal"
-                set term=xterm t_Co=256
+                set term=pcansi t_Co=256
                 let &t_AB = "\e[48;5;%dm"
                 let &t_AF = "\e[38;5;%dm"
                 "echomsg "Result: Terminal" &term "with" &t_Co "colors"
         endif
+    endif
 
-        if &t_Co == "256"
-            "echomsg "Telling solarized we have 256 colors"
-            let g:solarized_termcolors=256
-        endif
+    if &t_Co == "256"
+        "echomsg "Telling solarized we have 256 colors"
+        let g:solarized_termcolors=256
     endif
 endif
 colorscheme solarized
