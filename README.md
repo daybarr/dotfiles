@@ -17,7 +17,7 @@ sudo apt-get install pyflakes
 
 # For JavaScript support:
 sudo apt-get install npm
-sudo npm install -g jshint
+sudo npm install jshint jscs -g
 ```
 * [python_pep8](http://www.vim.org/scripts/script.php?script_id=3160): Check your python source files with PEP8
 ```
