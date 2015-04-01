@@ -74,6 +74,9 @@ endif
 " Show line numbers
 set number
 
+" Highlight line with the cursor
+set cursorline
+
 " Enable working on hidden buffers without requiring save before switch
 " http://stackoverflow.com/a/103590/445073
 set hidden
