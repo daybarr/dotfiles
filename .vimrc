@@ -126,6 +126,8 @@ autocmd syntax * SpaceHi
 " NERDTree
 noremap <script> <silent> <unique> <Leader>t :NERDTreeToggle<CR>
 noremap <script> <silent> <unique> <Leader>f :NERDTreeFind<CR>
+" close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Filter out . and .. directory entries - for when we view hidden files
 " (shift+i) in NERDTree window.
