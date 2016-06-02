@@ -73,6 +73,12 @@ else
     set clipboard=unnamedplus
 endif
 
+" Use forward slashes when expanding file names on windows where we use bash
+" as our shell
+if has("win32")
+    set shellslash
+endif
+
 " Show line numbers
 set number
 
