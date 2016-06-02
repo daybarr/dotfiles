@@ -103,7 +103,12 @@ set wildmenu
 
 " Show (partial) command in the last line of the screen.
 " Also shows size of selction in visual mode.
-set showcmd
+" Disabled to speed up redraw on scroll for Windoze where terminals are slow
+if has("win32")
+    set noshowcmd
+else
+    set showcmd
+endif
 
 " Increase and decrease window size in chunks instead of one row/col at a time
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
