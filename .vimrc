@@ -1,6 +1,8 @@
 "" choose no compatibility with legacy vi
 set nocompatible
 
+set runtimepath +=~/dev/dotfiles/.vim
+
 "" Pathogen - Install plugins from bundle
 call pathogen#infect()
 
