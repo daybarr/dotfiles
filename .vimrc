@@ -100,6 +100,9 @@ nmap <leader>v `[v`]
 " Toggle gundo (vim undo for humans)
 nnoremap <leader>u :GundoToggle<CR>
 
+" Remove all trailing whitespace
+nnoremap <leader>s :%s/\s\+$//<CR>
+
 " Visual autocomplete bar for the command menu
 set wildmenu
 
