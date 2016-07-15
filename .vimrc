@@ -103,6 +103,11 @@ nnoremap <leader>u :GundoToggle<CR>
 " Remove all trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<CR>
 
+" Open current buffer in Windows Explorer
+if has("win32")
+    nnoremap <leader>e :!explorer /select,$(cygpath -wa '%')<CR>
+endif
+
 " Visual autocomplete bar for the command menu
 set wildmenu
 
