@@ -1,6 +1,20 @@
 "" choose no compatibility with legacy vi
 set nocompatible
 
+" Run this as admin in cmd shell to have a path without spaces and to regain
+" some small measure of sanity:
+" mklink c:\tools\bash.exe "c:\Program Files\Git\bin\bash.exe"
+"set shellslash
+"let $SHELL='C:/tools/bash.exe'
+"set shell=\"\"C:\tools\bash.exe\"
+" set shellredir=>%s\ 2>&1
+"set shellpipe=2>&1\|\ tee
+" set shellcmdflag=-c
+" set shellquote=
+" set shellxquote=\"
+" set shellslash
+
+set shell=\"\"C:\Program\ Files\Git\bin\bash.exe\"
 set runtimepath +=~/dev/dotfiles/.vim
 
 "" Pathogen - Install plugins from bundle
@@ -103,9 +117,14 @@ nnoremap <leader>u :GundoToggle<CR>
 " Remove all trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<CR>
 
+" Next in location list
+nnoremap <leader>n :lne<CR>
+" Prevoius
+nnoremap <leader>p :lpre<CR>
+
 " Open current buffer in Windows Explorer
 if has("win32")
-    nnoremap <leader>e :!explorer /select,$(cygpath -wa '%')<CR>
+    nnoremap <leader>e :!explorer "/select,$(cygpath -wa '%')"<CR>
 endif
 
 " Visual autocomplete bar for the command menu
@@ -159,11 +178,3 @@ let NERDTreeIgnore=['\.$', '\.\.$', '\..*\.swp$', '.py[co]$']
 
 " python_pep8
 autocmd FileType python map <buffer> <Leader>8 :call Pep8()<CR>
-
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pyflakes']
-let g:syntastic_javascript_checkers = ['jshint', 'jscs']
