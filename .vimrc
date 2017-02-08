@@ -111,9 +111,6 @@ let mapleader=","
 " Command to visually highlight the last inserted text
 nmap <leader>v `[v`]
 
-" Toggle gundo (vim undo for humans)
-nnoremap <leader>u :GundoToggle<CR>
-
 " Remove all trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<CR>
 
@@ -165,6 +162,13 @@ set statusline +=%2*0x%04B\ %*          "character under cursor
 "" Plugin specific settings
 " SpaceHi
 autocmd syntax * SpaceHi
+
+" Undotree
+nnoremap <leader>u :UndotreeToggle<CR>
+if has("persistent_undo")
+    set undodir=~/.undodir/
+    set undofile
+endif
 
 " NERDTree
 noremap <script> <silent> <unique> <Leader>t :NERDTreeToggle<CR>
