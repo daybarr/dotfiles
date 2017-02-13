@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/undotree"]
 	path = .vim/bundle/undotree
 	url = https://github.com/mbbill/undotree.git
+[submodule ".vim/bundle/ListToggle"]
+	path = .vim/bundle/ListToggle
+	url = https://github.com/Valloric/ListToggle.git
