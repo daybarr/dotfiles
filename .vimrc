@@ -1,20 +1,19 @@
 "" choose no compatibility with legacy vi
 set nocompatible
 
-" Run this as admin in cmd shell to have a path without spaces and to regain
-" some small measure of sanity:
-" mklink c:\tools\bash.exe "c:\Program Files\Git\bin\bash.exe"
-"set shellslash
-"let $SHELL='C:/tools/bash.exe'
-"set shell=\"\"C:\tools\bash.exe\"
-" set shellredir=>%s\ 2>&1
-"set shellpipe=2>&1\|\ tee
-" set shellcmdflag=-c
-" set shellquote=
-" set shellxquote=\"
-" set shellslash
-
-set shell=\"\"C:\Program\ Files\Git\bin\bash.exe\"
+if has("win32")
+    "sorry
+    set shell=\"\"C:\Program\ Files\Git\bin\bash.exe\"
+    "set shellslash
+    "let $SHELL='C:/tools/bash.exe'
+    "set shell=\"\"C:\tools\bash.exe\"
+    "set shellredir=>%s\ 2>&1
+    "set shellpipe=2>&1\|\ tee
+    "set shellcmdflag=-c
+    "set shellquote=
+    "set shellxquote=\"
+    "set shellslash
+endif
 set runtimepath +=~/dev/dotfiles/.vim
 
 "" Pathogen - Install plugins from bundle
