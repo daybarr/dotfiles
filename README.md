@@ -12,6 +12,29 @@ Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good
 
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
+Works best with vim8. To compile on Ubuntu 16.04/16.10:
+```
+# Get build dependencies.
+# Uncomment deb-src lines in /etc/apt/sources.list if it fails
+sudo apt build-dep vim
+
+# Get vim and build it
+git clone https://github.com/vim/vim.git
+cd vim
+./configure \
+ --enable-multibyte \
+ --enable-pythoninterp=yes \
+ --enable-cscope \
+ --enable-gui=auto \
+ --enable-gtk2-check \
+ --enable-gnome-check \
+ --prefix=/usr
+ --with-x
+sudo make distclean
+make
+sudo make install
+```
+
 * [ALE](https://github.com/w0rp/ale): Asynchronous Lint Engine
 ```
 # For Python support
