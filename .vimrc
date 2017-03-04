@@ -85,7 +85,7 @@ set smartcase       " ... unless they contain aT least one capital letter
 if has("win32")
     set clipboard=unnamed
 else
-    set clipboard=unnamedplus
+    set clipboard^=unnamedplus
 endif
 
 " Use forward slashes when expanding file names on windows where we use bash
