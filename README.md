@@ -3,20 +3,22 @@ My dotfiles for Ubuntu Linux
 # Installation
 
     git clone https://daybarr@github.com/daybarr/dotfiles.git ~/dotfiles
-    ~/dotfiles/setup.py
+    cd ~/dotfiles
+    git submodule update --init
+    ./setup.py
 
 ## vim
 Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good-vimrc.html)
 
 Plugins managed by [pathogen](https://github.com/tpope/vim-pathogen):
 
-* [Syntastic](https://github.com/scrooloose/syntastic): Syntax checking plugin
+* [ALE](https://github.com/w0rp/ale): Asynchronous Lint Engine
 ```
 # For Python support
-sudo apt-get install pyflakes
+sudo apt install pyflakes pylint
 
 # For JavaScript support:
-sudo apt-get install npm
+sudo apt install npm
 sudo npm install jshint jscs -g
 ```
 * [python_pep8](http://www.vim.org/scripts/script.php?script_id=3160): Check your python source files with PEP8
@@ -31,7 +33,7 @@ sudo pip install pep8
 * [better_python](http://www.vim.org/scripts/script.php?script_id=974): handle continuation lines better than vim defaults
 * [bufexplorer](http://www.vim.org/scripts/script.php?script_id=42): quickly and easily switch between buffers
 * [The NERD tree](http://www.vim.org/scripts/script.php?script_id=1658): explore your filesystem to open files and directories
-* [gundo](http://www.vim.org/scripts/script.php?script_id=1658): making vim's undo tree usable by humans
+* [undotree](https://github.com/mbbill/undotree): The ultimate undo history visualizer for VIM
 * [emmet.vim](http://www.vim.org/scripts/script.php?script_id=2981): for HTML and CSS hi-speed coding
 
 ## fonts
