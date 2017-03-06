@@ -16,6 +16,9 @@ if has("win32")
 endif
 set runtimepath +=~/dev/dotfiles/.vim
 
+" Centralise .swp files instead of storing alongside file being edited
+set directory=$HOME/.vim/swapfiles//
+
 "" Pathogen - Install plugins from bundle
 call pathogen#infect()
 
