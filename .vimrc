@@ -118,7 +118,7 @@ nnoremap <leader>s :%s/\s\+$//<CR>
 
 " Next in location list
 nnoremap <leader>n :lne<CR>
-" Prevoius
+" Previous
 nnoremap <leader>p :lpre<CR>
 
 " Open current buffer in Windows Explorer
