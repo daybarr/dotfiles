@@ -116,10 +116,12 @@ nmap <leader>v `[v`]
 " Remove all trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<CR>
 
-" Next in location list
-nnoremap <leader>n :lne<CR>
-" Previous
-nnoremap <leader>p :lpre<CR>
+" Location list navigation, with wrapping thanks to
+" http://stackoverflow.com/a/27199153/445073
+" Next in loclist
+nnoremap <leader>n :try<bar>lnext<bar>catch /^Vim\%((\a\+)\)\=:E\%(553\<bar>42\):/<bar>lfirst<bar>endtry<cr>
+" Previous in loclist
+nnoremap <leader>p :try<bar>lpre<bar>catch /^Vim\%((\a\+)\)\=:E\%(553\<bar>42\):/<bar>llast<bar>endtry<cr>
 
 " Open current buffer in Windows Explorer
 if has("win32")
