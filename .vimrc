@@ -184,5 +184,9 @@ noremap <script> <silent> <unique> <Leader>f :NERDTreeFind<CR>
 " Binary .pyc and .pyo files for python.
 let NERDTreeIgnore=['\.$', '\.\.$', '\..*\.swp$', '.py[co]$']
 
+" ALE
+" open the loclist when a file contains warnings or errors
+let g:ale_open_list = 1
+
 " python_pep8
 autocmd FileType python map <buffer> <Leader>8 :call Pep8()<CR>
