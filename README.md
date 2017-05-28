@@ -28,7 +28,7 @@ cd vim
  --enable-gui=auto \
  --enable-gtk2-check \
  --enable-gnome-check \
- --prefix=/usr
+ --prefix=/usr \
  --with-x
 sudo make distclean
 make
