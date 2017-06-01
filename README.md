@@ -2,10 +2,8 @@ My dotfiles for Ubuntu Linux
 
 # Installation
 
-    git clone https://daybarr@github.com/daybarr/dotfiles.git ~/dotfiles
-    cd ~/dotfiles
-    git submodule update --init
-    ./setup.py
+    git clone --recursive https://daybarr@github.com/daybarr/dotfiles.git ~/dotfiles
+    python ~/dotfiles/setup.py
 
 ## vim
 Some .vimrc inspiration taken from [Doug Black](http://dougblack.io/words/a-good-vimrc.html)
