@@ -11,7 +11,7 @@ if __name__ == "__main__":
                     if f not in IGNORE and f.startswith('.')):
         home_file = os.path.join(home_dir, dotfile)
         repo_file = os.path.join(this_dir, dotfile)
-        if not os.path.exists(home_file):
+        if not os.path.lexists(home_file):
             print "  Linking {0} => {1}".format(home_file, repo_file)
             os.symlink(repo_file, home_file)
             continue
