@@ -140,6 +140,10 @@ else
     set showcmd
 endif
 
+" No audible bell thank you
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 " Increase and decrease window size in chunks instead of one row/col at a time
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
