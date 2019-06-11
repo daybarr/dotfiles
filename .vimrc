@@ -1,6 +1,12 @@
 "" choose no compatibility with legacy vi
 set nocompatible
 
+" Protect against modeline vulns e.g. CVE-2002-1377, CVE-2016-1248,
+" CVE-2019-12735 etc..
+" https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
+set modelines=0
+set nomodeline
+
 if has("win32")
     "sorry
     set shell=\"\"C:\Program\ Files\Git\bin\bash.exe\"
