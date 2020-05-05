@@ -7,19 +7,6 @@ set nocompatible
 set modelines=0
 set nomodeline
 
-if has("win32")
-    "sorry
-    set shell=\"\"C:\Program\ Files\Git\bin\bash.exe\"
-    "set shellslash
-    "let $SHELL='C:/tools/bash.exe'
-    "set shell=\"\"C:\tools\bash.exe\"
-    "set shellredir=>%s\ 2>&1
-    "set shellpipe=2>&1\|\ tee
-    "set shellcmdflag=-c
-    "set shellquote=
-    "set shellxquote=\"
-    "set shellslash
-endif
 set runtimepath +=~/dev/dotfiles/.vim
 
 " Centralise .swp files instead of storing alongside file being edited
