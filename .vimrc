@@ -9,7 +9,7 @@ set nomodeline
 
 
 " Centralise .swp files instead of storing alongside file being edited
-set directory=$HOME/.vim/swapfiles//
+set directory=$HOME/.vim/swapfiles/
 
 "" Pathogen - Install plugins from bundle
 call pathogen#infect()
