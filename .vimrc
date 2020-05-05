@@ -20,31 +20,7 @@ filetype plugin indent on       " load file type plugins + indentation
 
 "" Colors
 set background=dark
-if !has('gui_running')
-    "echomsg "Found: Terminal" &term "with" &t_Co "colors"
-    if empty($CONEMUBUILD)
-        if $COLORTERM == 'gnome-terminal' || $TERM == 'xterm-256color'
-            set t_Co=256
-        endif
-    else
-        " Hack for ConEmu on windows courtesy of
-        " http://stackoverflow.com/questions/14315519/conemu-vim-syntax-highlight
-        " plus extra hackery
-        if has('builtin_terms') && ((&term == "pcterm") || (&term == "win32"))
-                "echomsg "Trying to set ANSI 256-color terminal"
-                set term=pcansi t_Co=256
-"                let &t_AB = "\e[48;5;%dm"
-"                let &t_AF = "\e[38;5;%dm"
-                "echomsg "Result: Terminal" &term "with" &t_Co "colors"
-        endif
-    endif
-
-    if &t_Co == "256"
-        "echomsg "Telling solarized we have 256 colors"
-        let g:solarized_termcolors=256
-    endif
-endif
-colorscheme solarized
+colorscheme desert
 
 "" gvim options
 if has('gui_running')
