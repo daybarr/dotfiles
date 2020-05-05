@@ -7,6 +7,14 @@ set nocompatible
 set modelines=0
 set nomodeline
 
+" Fix cursor keys under Windows Terminal
+" https://github.com/microsoft/WSL/issues/1154#issuecomment-595951533
+if !empty($WT_SESSION)
+    set <Up>=[A
+    set <Down>=[B
+    set <Right>=[C
+    set <Left>=[D
+endif
 
 " Centralise .swp files instead of storing alongside file being edited
 set directory=$HOME/.vim/swapfiles/
